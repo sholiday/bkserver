@@ -6,7 +6,10 @@ INC = -I/usr/local/include/boost
 LIB=-L/usr/local/lib/
 BOOSTLIBS=/usr/local/lib/libboost_serialization.a
 
-all: clean tools
+all: 
+	$(CC) $(CFLAGS) $(INC) bkserver.cpp mongoose/mongoose.c -o bkserver $(LIB) $(BOOSTLIBS)
+
+#clean tools
 	
 tools:
 	$(CC) $(CFLAGS) $(INC) load_from_dictionary.cpp -o bkLoad $(LIB) $(BOOSTLIBS)

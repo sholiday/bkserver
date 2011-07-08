@@ -1,28 +1,12 @@
-## cppBKTree ##
+## bkserver ##
 
 By [Stephen Holiday](http://stephenholiday.com) 2011
 
-(Exception, Distance Algorithm by Anders Sewerin Johansen)
 
-The code is under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
-
-This a C++ implementation of a BKTree (Burkhard-Keller).
-Essentially it allows searching for an object in a metric space.
-
-One common use is for fuzzy string matching, like in a spell checker.
-The search is performed by looking at the distance of the test with the current
-node and moving according to the distance of the test to the children.
-
-This technique is faster than brute force as it does not need to look at every
-possible node in the space.
-
-Implemented according to [this post](http://blog.notdot.net/2007/4/Damn-Cool-Algorithms-Part-1-BK-Trees).
-
-I also wrote a [Python implementation](https://github.com/sholiday/pyBKTree).
 
 ### Tools ###
 
-Aside from the data structure itself, I wrote two tools to play with BKTrees.
+Aside from the server structure itself, I wrote two tools to play with BKTrees.
 
 Too make the tools just run:
     make tools
